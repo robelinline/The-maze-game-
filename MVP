@@ -1,0 +1,58 @@
+the Maze runner Game with SDL2
+
+Minimum Viable Product (MVP) Overview
+
+This document outlines the creation of a basic maze game using the SDL2 library. 
+It focuses on core functionalities for a playable experience and serves as a starting point for further development.
+
+Maze Representation
+
+ A 2D character array represents the maze layout.
+  * '#' denotes a wall.
+  * ' ' indicates an empty space (floor).
+
+Player and Camera
+
+* Player position is tracked using x and y coordinates (float).
+* Viewing direction is defined by angles (float) for player orientation.
+
+Game Loop
+
+1. Initialization:
+    * Include necessary libraries (SDL2).
+    * Define screen dimensions.
+    * Initialize SDL and create a window.
+2. Main Loop:
+    * Handle user input for movement (forward, backward, turn).
+    * Update player position and viewing direction based on input.
+    * Clear the screen.
+    * Draw the maze.
+    * Update the display.
+3. Cleanup:
+    * Close SDL on exit.
+
+Drawing the Maze
+
+* Iterate through the maze array.
+* If a cell contains '#', draw a rectangle representing a wall using SDL functions.
+  * Adjust rectangle size and color for visual customization.
+
+User Input
+
+* Capture user input (arrow keys/WASD) to control player movement.
+* Update player direction and position within maze boundaries.
+* Implement logic to prevent player movement through walls (collision detection - not covered in MVP).
+
+Expanding the MVP
+
+* Collision Detection: Prevent player movement through walls.
+* Ray Casting: Implement ray casting for a more realistic perspective.
+* Textures:Enhance visuals by adding textures to walls and floors.
+* Lighting Effects:Improve immersion with basic lighting effects.
+* Menus: Create menus for new game, load/save, and quit functionality.
+* Difficulty Levels:Offer different maze sizes and complexity levels.
+* Exit Detection:Implement logic to detect when the player reaches the exit. 
+* Scoring (Optional):Track time taken or items collected (optional).
+
+
+This documentation provides a roadmap for building a maze game with SDL2. By implementing the outlined features, to create a foundational maze game and expand upon it to create a more immersive and engaging experience.
